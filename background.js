@@ -401,6 +401,7 @@ function init(exports, rand, opts) {
 						if (match[2]) {
 							tmp = link.cloneNode()
 							tmp.href = JSON.parse(match[1])
+							tmp.target = "_blank"
 						} else {
 							tmp = span.cloneNode()
 						}
